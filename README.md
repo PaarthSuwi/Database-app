@@ -5,25 +5,25 @@ A PyQt5-based GUI application for managing a library database using SQLite. Desi
 ---
 
 ## 🗂️ Project Structure
+
 MyDatabaseApp/
+├── databases/                         # SQL resources and main database
+│   ├── create_tables.sql              # SQL script to define DB schema
+│   ├── insert_dummy_data.sql          # Preloaded sample data
+│   ├── queries.sql                    # Collection of SQL query examples
+│   └── siu_library.db                 # Main SQLite database file
 │
-├── databases/                            # SQL resources and main database
-│   ├── create_tables.sql                 # SQL script to define DB schema
-│   ├── insert_dummy_data.sql             # Preloaded sample data
-│   ├── queries.sql                       # Collection of SQL query examples
-│   └── siu_library.db                    # Main SQLite database file
+├── gui_app/                           # GUI application logic and assets
+│   ├── __pycache__/                   # Python bytecode cache
+│   ├── db_manager.py                  # DB access and operations
+│   ├── eg_csv.csv                     # Sample CSV for import/export
+│   ├── initialize_db.py               # DB setup script using SQL files
+│   ├── main.py                        # Entry point for launching the GUI
+│   ├── siu_library.db                 # Duplicate DB used by GUI (optional)
+│   ├── styles.qss                     # Qt stylesheet for UI customization
+│   └── ui_main.py                     # PyQt5 UI layout (auto-generated)
 │
-├── gui_app/                              # GUI application logic and assets
-│   ├── __pycache__/                      # Python bytecode cache
-│   ├── db_manager.py                     # DB access and operations
-│   ├── eg_csv.csv                        # Sample CSV for import/export
-│   ├── initialize_db.py                  # DB setup script using SQL files
-│   ├── main.py                           # Entry point for launching the GUI
-│   ├── siu_library.db                    # Duplicate DB used by GUI (optional)
-│   ├── styles.qss                        # Qt stylesheet for UI customization
-│   └── ui_main.py                        # PyQt5 UI layout (auto-generated)
-│
-├── requirements.txt                      # Python package dependencies
+└── requirements.txt                   # Python package dependencies
 
 
 ---
