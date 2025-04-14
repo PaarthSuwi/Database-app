@@ -1,0 +1,91 @@
+QWidget {
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+}
+
+QComboBox, QLineEdit, QPushButton, QTableView {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+QPushButton:hover {
+    background-color: #333333;
+}
+
+QPushButton:pressed {
+    background-color: #555555;
+}
+
+QTableView {
+    gridline-color: #444;
+    selection-background-color: #2d79c7;
+    selection-color: #ffffff;
+    alternate-background-color: #1a1a1a;
+}
+
+QHeaderView::section {
+    background-color: #222;
+    color: #f0f0f0;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: #2a2a2a;
+    width: 12px;
+}
+
+QScrollBar::handle {
+    background: #5a5a5a;
+    border-radius: 6px;
+}
+
+QMainWindow {
+    background-color: #f5f5f5;
+}
+
+QComboBox {
+    padding: 5px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+QPushButton {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+QPushButton:hover {
+    background-color: #45a049;
+}
+
+QPushButton:pressed {
+    background-color: #3e8e41;
+}
+
+QTableView {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+    gridline-color: #e0e0e0;
+    selection-background-color: #90caf9;
+    selection-color: #000000;
+}
+
+QHeaderView::section {
+    background-color: #eeeeee;
+    padding: 6px;
+    border: 1px solid #cccccc;
+    font-weight: bold;
+}
