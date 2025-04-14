@@ -5,23 +5,25 @@ A PyQt5-based GUI application for managing a library database using SQLite. Desi
 ---
 
 ## 🗂️ Project Structure
-
-MyDatabaseApp/ │ 
-├── databases/ # SQL-related resources │ 
-├── create_tables.sql # SQL script to create database schema │ 
-├── insert_dummy_data.sql # SQL script to populate with sample data │ 
-├── queries.sql # Common SQL query templates │ 
-└── siu_library.db # Main SQLite database file │ 
-├── gui_app/ # GUI application folder │ 
-├── pycache/ # Compiled Python cache │ 
-├── db_manager.py # Core DB interaction logic │ 
-├── eg_csv.csv # Example CSV for data import/export │ 
-├── initialize_db.py # One-time DB setup using SQL scripts │ 
-├── main.py # Main GUI launcher │ 
-├── siu_library.db # GUI-side duplicate DB (if needed) │ 
-├── styles.qss # Qt stylesheet for styling the GUI │ 
-└── ui_main.py # Auto-generated PyQt5 UI Python file │ 
-├── requirements.txt # Python dependencies
+MyDatabaseApp/
+│
+├── databases/                            # SQL resources and main database
+│   ├── create_tables.sql                 # SQL script to define DB schema
+│   ├── insert_dummy_data.sql             # Preloaded sample data
+│   ├── queries.sql                       # Collection of SQL query examples
+│   └── siu_library.db                    # Main SQLite database file
+│
+├── gui_app/                              # GUI application logic and assets
+│   ├── __pycache__/                      # Python bytecode cache
+│   ├── db_manager.py                     # DB access and operations
+│   ├── eg_csv.csv                        # Sample CSV for import/export
+│   ├── initialize_db.py                  # DB setup script using SQL files
+│   ├── main.py                           # Entry point for launching the GUI
+│   ├── siu_library.db                    # Duplicate DB used by GUI (optional)
+│   ├── styles.qss                        # Qt stylesheet for UI customization
+│   └── ui_main.py                        # PyQt5 UI layout (auto-generated)
+│
+├── requirements.txt                      # Python package dependencies
 
 
 ---
